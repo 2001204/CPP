@@ -1,0 +1,29 @@
+#ifndef COMPLEX_
+#define COMPLEX_
+
+namespace nutil {
+	class Complex {
+	private:
+		int real;
+		int imag;
+	public:
+		Complex(void);
+
+		Complex(int real, int imag);
+
+		int getReal(void) const;
+
+		void setReal(const int real);
+
+		int getImag(void) const;
+
+		void setImag(const int imag);
+
+		friend istream& operator>>(istream &cin, Complex &other);
+
+		friend ostream& operator<<(ostream &cout, const Complex &other);
+
+	};
+}
+
+#endif /* COMPLEX_ */
