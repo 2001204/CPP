@@ -1,0 +1,15 @@
+
+
+#ifndef CALCULATOR_
+#define CALCULATOR_
+
+#include"../include/ArithmeticException"
+using namespace exception;
+
+namespace util{
+int calculate (int num1, int num2 )throw(ArithmeticException);
+}
+
+
+
+#endif

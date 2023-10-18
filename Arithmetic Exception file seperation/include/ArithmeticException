@@ -1,0 +1,29 @@
+
+#ifndef ARITHMETICEXCEPTION_
+#define ARITHMETICEXCEPTION_
+
+#include<string>
+using namespace std;
+namespace exception{
+	class ArithmeticException{
+	private:
+		const string message;
+		const int lineNumber;
+		const string functionName;
+		const string fileName;
+	public:
+		ArithmeticException( string message, int lineNumber, string functionName, string fileName);
+
+		string getMessage( void )const;
+
+		int getLineNumber( void )const;
+
+		string getFunctionName( void )const;
+
+		string getFileName( void )const;
+
+	};
+
+}
+
+#endif
